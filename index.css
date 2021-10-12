@@ -1,31 +1,33 @@
 body {
-    background-color: rgb(40, 71, 41);
-    color: rgb(221, 113, 113);
+    background-color: rgb(48, 72, 58);
+    color: rgb(187, 163, 103);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
 }
 
-p.question {
+#sum-el {
     font-style: italic;
 }
 
 button {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
-    border-radius: 10%;
-    padding: 2em;
+    font-weight: 900;
+    border-radius: 1em;
+    padding: 1em;
     margin: 1em;
 }
 
 #play-el {
-    background-color: rgb(0, 200, 0);
-    padding-left: 3em;
-    padding-right: 3em;
+    background-color: rgb(187, 163, 103);
+    color: rgb(48, 72, 58);
+    padding-left: 4em;
+    padding-right: 4em;
 }
 
 #quit-el {
     background-color: rgb(200, 0, 0);
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: 4em;
+    padding-right: 4em;
 }
