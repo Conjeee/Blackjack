@@ -11,23 +11,22 @@ body {
 }
 
 button {
+    background-color: rgb(187, 163, 103);
+    color: rgb(48, 72, 58);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     font-weight: 900;
     border-radius: 1em;
     padding: 1em;
     margin: 1em;
-}
-
-#play-el {
-    background-color: rgb(187, 163, 103);
-    color: rgb(48, 72, 58);
     padding-left: 4em;
     padding-right: 4em;
 }
 
-#quit-el {
-    background-color: rgb(200, 0, 0);
-    padding-left: 4em;
-    padding-right: 4em;
+#draw-el {
+    display: none;
+}
+
+#stay-el {
+    display: none;
 }
