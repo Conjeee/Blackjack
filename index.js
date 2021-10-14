@@ -5,19 +5,19 @@ let playEl = document.getElementById("play-el")
 let stayEl = document.getElementById("stay-el")
 let dealerEl = document.getElementById("dealer-el")
 
-let cardOne = 0
-let cardTwo = 0
-let cardThree = 0
-let sum = cardOne + cardTwo + cardThree
+const cards = [0,0,0,0,0,0,0,0,0,0,0]
+let cardCount = 2
+let sum = 0
 let dealerSum = 0
 let lost = false
 
 function play() {
-    cardOne = Math.ceil(Math.random() * 11)
-    cardTwo = Math.ceil(Math.random() * 11)
+    cards[0] = Math.ceil(Math.random() * 10)+1
+    cards[1] = Math.ceil(Math.random() * 10)+1
+    sum = cards[0] + cards[1]
 
     playEl.style.display = "none"
-    cardsEl.innerText = "Your Cards: " + cardOne + " - " + cardTwo
+    cardsEl.innerText = "Your Cards: " + cards[0] + " - " + cards[1]
     dealerEl.innerText = "Dealer's Cards: "
 
     if(sum <= 21) {
@@ -34,17 +34,17 @@ function play() {
 }
 
 function draw() {
-    drawEl.style.display = "none"
-    stayEl.style.display = "none"
-    playEl.style.display = "inline"
-
-    cardsEl.innerText += " - " + Math.ceil(Math.random() * 11)
+    cards[cardCount] = Math.ceil(Math.random() * 10)+1
+    cardsEl.innerText += " - " + cards[cardCount]
+    sum += cards[cardCount++]
 
     if(sum > 21) {
-        textEl.innerText = "You Busted! You Lost This Round."
         lost = true
+        drawEl.style.display = "none"
+        stayEl.style.display = "none"
+        playEl.style.display = "inline"
+        evaluate()
     }
-    evaluate()
 }
 
 function stay() {
@@ -56,7 +56,7 @@ function stay() {
 
 function evaluate() {
     while(dealerSum < 16) {
-        let num = Math.ceil(Math.random() * 11)
+        let num = Math.ceil(Math.random() * 10)+1
         dealerSum += num
         dealerEl.innerText += " - " + num
     }
@@ -72,10 +72,8 @@ function evaluate() {
     else {
         textEl.innerText = "You Tied! Play Again?"
     }
-    setNeutral()
-}
 
-function setNeutral() {
     dealerSum = 0
     lost = false
+    cards.fill(0)
 }
