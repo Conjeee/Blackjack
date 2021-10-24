@@ -18,7 +18,7 @@ const cardPictureArray = [
     ,"cardPics/Jbc.png","cardPics/Jbs.png","cardPics/Jrd.png","cardPics/Jrh.png"
     ,"cardPics/Qbc.png","cardPics/Qbs.png","cardPics/Qrd.png","cardPics/Qrh.png"
     ,"cardPics/Kbc.png","cardPics/Kbs.png","cardPics/Krd.png","cardPics/Krh.png"],
-    ["cardPics/11bc.png","cardPics/11bs.png","cardPics/11rd.png","cardPics/11rh.png"],
+    ["cardPics/11bc.png","cardPics/11bs.png","cardPics/11rd.png","cardPics/11rh.png"]
 ]
 let sum = 0
 let dealerSum = 0
