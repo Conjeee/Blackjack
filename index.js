@@ -6,19 +6,19 @@ let stayEl = document.getElementById("stay-el")
 let dealerEl = document.getElementById("dealer-el")
 
 const cardPictureArray = [
-    ["cardPics/2bc.png","cardPics/2bs.png","cardPics/2rd.png","cardPics/2rh.png"],
-    ["cardPics/3bc.png","cardPics/3bs.png","cardPics/3rd.png","cardPics/3rh.png"],
-    ["cardPics/4bc.png","cardPics/4bs.png","cardPics/4rd.png","cardPics/4rh.png"],
-    ["cardPics/5bc.png","cardPics/5bs.png","cardPics/5rd.png","cardPics/5rh.png"],
-    ["cardPics/6bc.png","cardPics/6bs.png","cardPics/6rd.png","cardPics/6rh.png"],
-    ["cardPics/7bc.png","cardPics/7bs.png","cardPics/7rd.png","cardPics/7rh.png"],
-    ["cardPics/8bc.png","cardPics/8bs.png","cardPics/8rd.png","cardPics/8rh.png"],
-    ["cardPics/9bc.png","cardPics/9bs.png","cardPics/9rd.png","cardPics/9rh.png"],
-    ["cardPics/10bc.png","cardPics/10bs.png","cardPics/10rd.png","cardPics/10rh.png"
-    ,"cardPics/Jbc.png","cardPics/Jbs.png","cardPics/Jrd.png","cardPics/Jrh.png"
-    ,"cardPics/Qbc.png","cardPics/Qbs.png","cardPics/Qrd.png","cardPics/Qrh.png"
-    ,"cardPics/Kbc.png","cardPics/Kbs.png","cardPics/Krd.png","cardPics/Krh.png"],
-    ["cardPics/11bc.png","cardPics/11bs.png","cardPics/11rd.png","cardPics/11rh.png"]
+    ["cardPics/2bc-min.png","cardPics/2bs-min.png","cardPics/2rd-min.png","cardPics/2rh-min.png"],
+    ["cardPics/3bc-min.png","cardPics/3bs-min.png","cardPics/3rd-min.png","cardPics/3rh-min.png"],
+    ["cardPics/4bc-min.png","cardPics/4bs-min.png","cardPics/4rd-min.png","cardPics/4rh-min.png"],
+    ["cardPics/5bc-min.png","cardPics/5bs-min.png","cardPics/5rd-min.png","cardPics/5rh-min.png"],
+    ["cardPics/6bc-min.png","cardPics/6bs-min.png","cardPics/6rd-min.png","cardPics/6rh-min.png"],
+    ["cardPics/7bc-min.png","cardPics/7bs-min.png","cardPics/7rd-min.png","cardPics/7rh-min.png"],
+    ["cardPics/8bc-min.png","cardPics/8bs-min.png","cardPics/8rd-min.png","cardPics/8rh-min.png"],
+    ["cardPics/9bc-min.png","cardPics/9bs-min.png","cardPics/9rd-min.png","cardPics/9rh-min.png"],
+    ["cardPics/10bc-min.png","cardPics/10b-mins.png","cardPics/10-minrd.png","cardPics/1-min0rh.png"
+    ,"cardPics/Jbc-min.png","cardPics/Jbs-min.png","cardPics/Jrd-min.png","cardPics/Jrh-min.png"
+    ,"cardPics/Qbc-min.png","cardPics/Qbs-min.png","cardPics/Qrd-min.png","cardPics/Qrh-min.png"
+    ,"cardPics/Kbc-min.png","cardPics/Kbs-min.png","cardPics/Krd-min.png","cardPics/Krh-min.png"],
+    ["cardPics/11bc-min.png","cardPics/11b-mins.png","cardPics/11-minrd.png","cardPics/1-min1rh.png"]
 ]
 let sum = 0
 let dealerSum = 0
@@ -30,8 +30,8 @@ function play() {
     sum = num1 + num2
 
     playEl.style.display = "none"
-    cardsEl.innerText = "Your Cards: "
-    dealerEl.innerText = "Dealer's Cards: "
+    cardsEl.innerText = ""
+    dealerEl.innerText = ""
 
     addImage(num1, 'cards-el')
     addImage(num2, 'cards-el')
@@ -81,7 +81,7 @@ function evaluate() {
         textEl.innerText = "You Lost! Play Again?"
     }
 
-    else if(dealerSum > 21) {
+    else if(dealerSum > 21 || sum > dealerSum) {
         textEl.innerText = "You Won! Play Again?"
     }
 

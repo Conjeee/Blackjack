@@ -10,8 +10,18 @@
 <body>
     <h1>Blackjack</h1>
     <p id="text-el">Want To Play A Round?</p>
-    <p id="dealer-el">Dealer's Cards: </p>
-    <p id="cards-el">Your Cards: </p>
+    <div class="card-container">
+        <p>Dealer's Cards: </p>
+        <div class="box-container">
+            <p id="dealer-el"></p>
+        </div>
+    </div>
+    <div class="card-container">
+        <p>Your Cards: </p>
+        <div class="box-container">
+            <p id="cards-el"></p>
+        </div>
+    </div>
     <button id="play-el" onclick="play()">Play</button>
     <button id="draw-el" onclick="draw()">Draw</button>
     <button id="stay-el" onclick="stay()">Stay</button>
