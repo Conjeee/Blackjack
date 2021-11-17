@@ -14,11 +14,11 @@ const cardPictureArray = [
     ["cardPics/7bc-min.png","cardPics/7bs-min.png","cardPics/7rd-min.png","cardPics/7rh-min.png"],
     ["cardPics/8bc-min.png","cardPics/8bs-min.png","cardPics/8rd-min.png","cardPics/8rh-min.png"],
     ["cardPics/9bc-min.png","cardPics/9bs-min.png","cardPics/9rd-min.png","cardPics/9rh-min.png"],
-    ["cardPics/10bc-min.png","cardPics/10b-mins.png","cardPics/10-minrd.png","cardPics/1-min0rh.png"
+    ["cardPics/10bc-min.png","cardPics/10bs-min.png","cardPics/10rd-min.png","cardPics/10rh-min.png"
     ,"cardPics/Jbc-min.png","cardPics/Jbs-min.png","cardPics/Jrd-min.png","cardPics/Jrh-min.png"
     ,"cardPics/Qbc-min.png","cardPics/Qbs-min.png","cardPics/Qrd-min.png","cardPics/Qrh-min.png"
     ,"cardPics/Kbc-min.png","cardPics/Kbs-min.png","cardPics/Krd-min.png","cardPics/Krh-min.png"],
-    ["cardPics/11bc-min.png","cardPics/11b-mins.png","cardPics/11-minrd.png","cardPics/1-min1rh.png"]
+    ["cardPics/11bc-min.png","cardPics/11bs-min.png","cardPics/11rd-min.png","cardPics/11rh-min.png"]
 ]
 let sum = 0
 let dealerSum = 0
